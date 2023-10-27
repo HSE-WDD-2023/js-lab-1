@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS DOM Playground</title>
+   <link rel="apple-touch-icon" sizes="128x128" href="https://hse-wdd.github.io/js-intro/favicon.png">
+  <link rel="shortcut icon" href="https://hse-wdd.github.io/js-intro/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <link rel="stylesheet" href="https://hse-wdd.github.io/js-intro/style.css">
+  <script src="./lab1.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="example-box">
+      <h1>Favorite Food</h1>
+      <label for="food-input">
+        <input type="text" name="food-input" id="food-input" placeholder="What is your favorite food?">
+      </label>
+      <button id="go-button">Go</button>
+      <p>I love <span id="fav-food"></span></p>
+    </div>
+
+    <!-- example 2 change a picture -->
+    <div class="example-box">
+      <h1>Picture Changer</h1>
+      <div class="picture-box">
+        <img src="./full.png" alt="full cup" id="my-picture">
+      </div>
+      <div class="row">
+        <button id="drink-it-button">Drint It</button>
+        <button id="fill-it-button">Fill It Up</button>
+      </div>
+    </div>
+    
+    <!-- example 3 Color Changer -->
+    <div class="example-box">
+      <h1>Color Changer</h1>
+      <p id="color-text">
+        Use the color pickers below to change the color of this paragraph text.
+      </p>
+      <div class="clr-lbl">
+        <label for="text-picker">Text Color: </label>
+        <input type="color" name="text-picker" id="text-picker" value="#000000">
+      </div>
+      <div class="clr-lbl">
+        <label for="bg-picker">Background Color: </label>
+        <input type="color" name="bg-picker" id="bg-picker" value="#000000">
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
